@@ -12,8 +12,6 @@
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <title>Club Pymes</title>
-  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/static/css/clean-blog.min.css" rel="stylesheet">
 </head>
 
 <div class="pos-f-t">
@@ -31,12 +29,35 @@
       <a class="p-2 link-secondary" href="#">Tecnologos</a>
       <a class="p-2 link-secondary" href="#">LifeStyle</a>
       <a class="p-2 link-secondary" href="#">Tutoritales</a>
-      <a class="p-2 link-secondary" href="#">Arte y Cultura</a>
+      <a class="p-2 link-secondary" href="/arteyCultura.html">Arte y Cultura</a>
   </nav>
 </div>
 
 <div class="container">
   <header class="blog-header py-3">
+        <nav role="navigation">
+        <ul class="list-inline">
+          <li class="button-group dropdown hidden-xs hidden-sm">
+              </a>
+        <a href="/login.html" titile="ingresar usuario" data-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg><i class="bi bi-person-fill">Usuario</i></a>
+            <div class="triangle"></div>
+            <div class="dropdown-menu large" aria-labelledby="create-dropdown">
+              <ul aria-label="Ingresar">
+                <li>
+                  <a href="/login.html" rel="nofollow" aria-label="Create a new story">Ingresar
+                  </a>
+                </li>
+                <li>
+                  <a href="/perfil.html" rel="nofollow" aria-label="My Stories">Mis historias</a>
+                </li>
+                  <li>
+                    <a href="/publicacion.html">Escribir nueva historia</a></li>
+              </ul>
+            </div> 
+        </ul>
+      </nav>
     <div class="row flex-nowrap justify-content-center align-items-center">
       <div class="col-4 pt-1">
       </div>
@@ -44,11 +65,6 @@
         <a class="blog-header-logo text-dark" href="index.html"><h1>Club Pymes</h1></a>
       </div>
       <div class="col-4 d-flex justify-content-end align-items-center">
-        </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-        </svg>
-        <a href="/login.html" titile="ingresar usuario"><i class="bi bi-person-fill">Ingresar usuario</i></a>
       </div>
     </div>
   </header>
@@ -212,11 +228,9 @@
   </div><!-- /.row -->
 
 </main><!-- /.container -->
-    <script src="/static/vendor/jquery/jquery.min.js"></script>
-    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="/static/js/clean-blog.min.js"></script>
+    <script $('#myModal').modal(options)></script>
   <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
