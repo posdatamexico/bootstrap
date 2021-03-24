@@ -4,16 +4,40 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <title>Club Pymes</title>
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/clean-blog.min.css" rel="stylesheet">
 </head>
-	
+
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="p-2 link-secondary" href="#">Home</a>
+      <a class="p-2 link-secondary" href="#">Noticias</a>
+      <a class="p-2 link-secondary" href="#">Desde mi Merkado</a>
+      <a class="p-2 link-secondary" href="#">Tecnologos</a>
+      <a class="p-2 link-secondary" href="#">LifeStyle</a>
+      <a class="p-2 link-secondary" href="#">Tutoritales</a>
+      <a class="p-2 link-secondary" href="#">Arte y Cultura</a>
+  </nav>
+</div>
+
 <div class="container">
   <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
+    <div class="row flex-nowrap justify-content-center align-items-center">
       <div class="col-4 pt-1">
       </div>
       <div class="col-4 text-center">
@@ -29,18 +53,9 @@
     </div>
   </header>
 
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="p-2 link-secondary" href="#">Home</a>
-      <a class="p-2 link-secondary" href="#">Noticias</a>
-      <a class="p-2 link-secondary" href="#">Desde mi Merkado</a>
-      <a class="p-2 link-secondary" href="#">Tecnologos</a>
-      <a class="p-2 link-secondary" href="#">LifeStyle</a>
-      <a class="p-2 link-secondary" href="#">Tutoritales</a>
-      <a class="p-2 link-secondary" href="#">Arte y Cultura</a>
-    </nav>
-  </div>
-</div>
+    
+
+
     <div class="container">
       <div class="row">
         <div class="col-md-12 search">
@@ -60,10 +75,12 @@
     </div>
 
 <div class="container">
-	<img src="../img/inicio.jpg" class="img-fluid" alt="Responsive image">
+  <img src="../img/inicio.jpg" class="img-fluid" alt="Responsive image">
 </div>
 
-<main class="container">
+<body>     
+<main>
+<div class="container">
   <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
       <h4 class="display-4 fst-italic">20 Tips para crear memorias felices</h4>
@@ -83,7 +100,7 @@
           <a href="/example.html" class="stretched-link">Continue reading</a>
         </div>
         <div class="media">
-          <img class="d-flex mr-3 img-thumbnail align-self-center" width="400" height="250" src="img/lifestyle.jpg" alt="lifestyle">
+          <img class="img-fluid" src="img/lifestyle.jpg" alt="lifestyle">
         </div>
       </div>
     </div>
@@ -98,7 +115,7 @@
           <a href="#" class="stretched-link">Continue reading</a>
         </div>
         <div class="media">
-          <img class="d-flex mr-3 img-thumbnail align-self-center" width="400" height="200"
+          <img class="img-fluid img-thumbnail"
             src="img/about-bg.jpg" alt="entrevista">
         </div>
       </div>
@@ -195,7 +212,16 @@
   </div><!-- /.row -->
 
 </main><!-- /.container -->
-  
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/clean-blog.min.js"></script>
+  <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+  </script>
 	<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
